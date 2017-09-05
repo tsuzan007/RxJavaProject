@@ -6,13 +6,41 @@
     android:layout_height="match_parent"
     tools:context="com.app.pets.rxjavaproject.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/searchBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Search for country"
+        android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
 
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:text="Search"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintLeft_toRightOf="@+id/searchBox"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="387dp"
+        android:layout_height="374dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBox"
+        tools:layout_editor_absoluteX="-1dp" />
 </android.support.constraint.ConstraintLayout>
